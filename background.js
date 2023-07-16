@@ -1,14 +1,15 @@
 // NOTE: alert function (typically not required but looks better)
-function displayAnswer(message) {
+const displayAnswer = (message) => {
   alert(message);
-}
+};
 
 // NOTE: contextMenu callback function
-async function contextMenuCallback(info) {
+
+const contextMenuCallback = async (info) => {
   if (info.menuItemId == "check_image") {
     await getPredictions(info.srcUrl);
   }
-}
+};
 
 // NOTE: mime type white-list
 const image_mimetypes = [
@@ -38,7 +39,8 @@ const image_mimetypes = [
 const apiUrl = "https://steg-api.up.railway.app/predict";
 
 // NOTE: Function to get prediction
-async function getPredictions(url) {
+
+const getPredictions = async (url) => {
   const data = {
     url,
   };
@@ -68,7 +70,7 @@ async function getPredictions(url) {
     function: displayAnswer,
     args: [predict.message],
   });
-}
+};
 
 // NOTE: Triggers file prediction on image download
 chrome.downloads.onCreated.addListener(async (download) => {
