@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Steganalysis Tool",
+  "name": "PixelSpy",
   "description": "This extension shows an alert if an image uses Steganography or not",
   "version": "1.0",
   "background": { "service_worker": "background.js", "type": "module" },
