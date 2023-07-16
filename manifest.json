@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PixelSpy",
-  "description": "This extension shows an alert if an image uses Steganography or not",
+  "description": "Detect hidden information in images with this powerful steganalysis extension. Safeguard your online experience by identifying concealed data within images.",
   "version": "1.0",
   "background": { "service_worker": "background.js", "type": "module" },
   "permissions": ["downloads", "tabs", "scripting", "contextMenus"],
