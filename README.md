@@ -7,7 +7,7 @@ tags:
   - steg
 ---
 
-## 💁‍♀️ How to use
+## How to use
 
 - Clone repo
 - Goto `chrome://extensions/` on your chrome browser
